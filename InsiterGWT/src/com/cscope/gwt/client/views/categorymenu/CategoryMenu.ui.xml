@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:e="urn:import:com.cscope.gwt.client.widgets.entitymenu"
+	xmlns:s="urn:import:com.cscope.gwt.client.widgets.subjectmenu">
+	<ui:style>
+	</ui:style>
+	<g:HTMLPanel>
+		<e:EntityMenu ui:field="entityMenu"></e:EntityMenu>
+		<s:SubjectMenu ui:field="subjectMenu"></s:SubjectMenu>
+	</g:HTMLPanel>
+</ui:UiBinder> 

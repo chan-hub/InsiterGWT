@@ -1,0 +1,22 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:h="urn:import:com.google.gwt.http.client" xmlns:u="urn:import:java.util">
+	<ui:with field="resources" type="com.cscope.gwt.client.widgets.HorizontalScrollingMenu.Base.css.HorizontalScrollingMenuResources"/>
+	<ui:style>
+	</ui:style>
+	
+	
+	
+	<g:HTMLPanel styleName="{resources.horizontalScrollingMenu.container}">
+			<g:FlowPanel 
+			    styleName="{resources.horizontalScrollingMenu.nav}" 
+			    addStyleNames="{resources.horizontalScrollingMenu.vertical_align_middle} {resources.horizontalScrollingMenu.scroll}" 
+			    ui:field="panel">
+				<!-- 
+				<g:HTMLPanel addStyleNames="{resources.horizontalScrollingMenu.nav_item} " ui:field="headerName" >
+					Logo
+				</g:HTMLPanel>
+				 -->
+			</g:FlowPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

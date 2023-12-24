@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When updating your version of GWT, you should also update this DTD reference,
+  so that your app can take advantage of the latest GWT module capabilities.
+-->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.8.2//EN"
+  "http://gwtproject.org/doctype/2.8.2/gwt-module.dtd">
+
+<module rename-to='insitergwt'>
+
+  <!-- Inherit the core Web Toolkit stuff. : User.gwt.xml -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+
+<!-- Define location of build.gwt.xml & web.gwt.xml, which provide reference to
+     Insiter's news.build.*.java  &  news.service.web.*.java -->
+  <inherits name='insiter.ina.news.build'/>
+  <inherits name='insiter.ina.news.service.web'/>
+  <!-- Specify our entry point of GWT class -->
+  <entry-point class='com.cscope.gwt.client.InsiterGWT'/>
+
+  <!-- Specify the paths for translatable code -->
+  <source path='client'/>
+  <source path='shared'/>
+
+  <!-- allow Super Develop Mode -->
+  <add-linker name="xsiframe"/>
+
+</module>

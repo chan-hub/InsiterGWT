@@ -1,0 +1,148 @@
+@def selectionBorderWidth 0px;
+.dataGridWidget {
+ 
+}
+
+.dataGridFirstColumn {
+ 
+}
+
+.dataGridLastColumn {
+/*	background-color: magenta;*/
+}
+
+.dataGridFooter {
+/*   border-top: 2px solid #6f7277; */
+  padding: 3px 15px;
+  text-align: left;
+  color: #4b4a4a;
+  text-shadow: #ddf 1px 1px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dataGridHeader {
+/*   border-bottom: 2px solid #6f7277; */
+  padding: 3px 15px;
+  text-align: left;
+  color: #4b4a4a;
+  text-shadow: #ddf 1px 1px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/*
+The padding property can have from one to four values.
+
+    padding: 25px 50px 75px 100px;
+        top padding is 25px
+        right padding is 50px
+        bottom padding is 75px
+        left padding is 100px
+
+    padding: 25px 50px 75px;
+        top padding is 25px
+        right and left paddings are 50px
+        bottom padding is 75px
+
+    padding: 25px 50px;
+        top and bottom paddings are 25px
+        right and left paddings are 50px
+
+    padding: 25px;
+        all four paddings are 25px
+*/
+
+.dataGridCell {
+/*padding: 2px 15px; means top & bottom is 2px, left & right is 15px */
+/*padding seq is top, right, bottom, left */
+/*padding: 1px 1px; too tight */
+/*padding: 7px 1px 10px 2px; */
+  padding: 2px 2px 2px 2px;
+  overflow: hidden;
+}
+
+.dataGridFirstColumnFooter {
+ 
+}
+
+.dataGridFirstColumnHeader {
+ 
+}
+
+.dataGridLastColumnFooter {
+ 
+}
+
+.dataGridLastColumnHeader {
+ 
+}
+
+.dataGridSortableHeader {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.dataGridSortableHeader:hover {
+  color: #6c6b6b;
+}
+
+.dataGridSortedHeaderAscending {
+ 
+}
+
+.dataGridSortedHeaderDescending {
+ 
+}
+
+.dataGridEvenRow {
+/*  background: #ffffff;*/
+  border-bottom: 1px solid #8b9dc3;
+}
+
+.dataGridEvenRowCell {
+/*   border: selectionBorderWidth solid #ffffff; */
+}
+
+.dataGridOddRow {
+  background: white;
+  border-bottom: 1px solid #8b9dc3;
+}
+
+.dataGridOddRowCell {
+   border: 0px solid white; 
+}
+
+.dataGridHoveredRow {
+  background: #eee;
+}
+
+.dataGridHoveredRowCell {
+  border: selectionBorderWidth solid #eee;
+}
+
+.dataGridKeyboardSelectedRow {
+   background: #ffffff;
+}
+
+.dataGridKeyboardSelectedRowCell {
+   border: selectionBorderWidth solid #ffc; 
+}
+
+/* .dataGridSelectedRow { */
+/*  background: #628cd5; */
+/*  color: white; */
+/*  height: auto; */
+/*  overflow: auto; */
+/* } */
+
+/* .dataGridSelectedRowCell { */
+/*  border: selectionBorderWidth solid #628cd5; */
+/* } */
+
+/**
+ * The keyboard selected cell is visible over selection.
+ */
+.dataGridKeyboardSelectedCell {
+/*   border: selectionBorderWidth solid #d7dde8; */
+}

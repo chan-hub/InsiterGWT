@@ -1,0 +1,88 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	@font-face {
+		font-family: 'GhotamThin';
+		src: url("/fonts/GothamNarrow-Thin.otf") format("opentype");
+	}
+
+    @font-face {
+	    font-family: 'GhotamLight';
+	    src: url("/fonts/GothamNarrow-Light.otf") format("opentype");
+	}
+
+	@font-face {
+		font-family: 'GhotamBold';
+		src: url("/fonts/GothamNarrow-Bold.otf") format("opentype");
+		font-weight: bold;
+	}
+
+    @font-face {
+		font-family: 'GhotamRegBold';
+		src: url("/fonts/Gotham-Bold.otf") format("opentype");
+		font-weight: bold;
+	}
+
+	.topMenu {
+		height: 54px;
+		background-color: white;
+		color: #55ACEE;
+		vertial-align: middle;
+		line-height: 25px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.topMenu:after {
+		content: 'top menu area';
+	}
+
+	table {
+	    border-collapse: collapse;
+	    border-color: green; 
+	}
+		
+	table td {
+	/* font-family: 'GhotamThin' !important; */
+	 font-family: 'GhotamLight' !important;
+	}
+
+	table td div > span:nth-child\(1\) {
+		font-family: 'Sans Open',Segoe,Frutiger,Proxima-nova,Helvetica;
+	}
+
+	.contentArea {
+		height: 100%;
+		margin-left: 1%;
+		margin-right: 1%;
+		font-family: 'GhotamLight' !important;
+/*		font-family: 'GhotamThin' !important;*/
+/*			background-color: white;*/
+/*			color: #55ACEE;*/			
+/*			padding-top: 10%;*/
+/*			text-align: center;*/
+/*			text-transform: uppercase;*/
+/*			line-height: 55px;*/
+	}
+	.contentArea:before {
+/* 			content: 'tweet list area'; */
+/* 			line-height: 55px; */
+/* 			border-bottom: 1px solid #55ACEE; */
+	}
+	
+	.categoryMenu {
+	}
+	
+	</ui:style>
+	<g:LayoutPanel>
+	<g:layer top="0" height="0">
+		<g:SimplePanel styleName="{style.topMenu}" ui:field="topMenu"></g:SimplePanel>
+	</g:layer>
+	<g:layer top="0" height="86">
+		<g:SimplePanel styleName="{style.categoryMenu}" ui:field="categoryMenu"></g:SimplePanel>
+	</g:layer>
+	<g:layer top="66" bottom="0">
+		<g:LayoutPanel styleName="{style.contentArea}" ui:field="contentArea"></g:LayoutPanel>
+	</g:layer>
+	</g:LayoutPanel>
+</ui:UiBinder> 

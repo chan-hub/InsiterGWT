@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: 'GhotamLight';
+	src: url("/fonts/GothamNarrow-Light.otf") format("opentype");
+}
+
+/* Make each area overflow horizontally and  have the ability to have other items scrolled into view */
+.scroll {
+	margin-left: 1%;
+	white-space: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Container required styles --------------- /  */
+.container .nav {
+  width: 98%;
+}
+.container .nav_item {
+   color: #8b9dc3;
+}
+
+.container .nav {
+/* 	background: #727c87; */
+	background: #ffffff;
+	white-space: nowrap;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+/* // Nav items */
+.nav_item {
+/*     padding: 10px 16px 14px; */
+	padding-top: 9px;
+    padding-right: 5px;
+    padding-bottom: 9px;
+    padding-left: 5px;
+}
+
+/* .nav_item:not(:last-child) { */
+/*     border-right: 1px solid rgba(114, 124, 135, 0.2); */
+/* } */
+
+/* // Setup/misc styles --------------- / */
+* {
+	box-sizing: border-box;
+}
+
+/*  Remove the inline-block extra space */
+.nav {
+	font-size: 0;
+	border-bottom: 1px solid #8b9dc3;
+}
+
+/*  Requires font size to be reset for these elements */
+.nav_item {
+	font-size: 17px;
+	line-height: 23px;
+/*	font-size: 16px; */
+/*	line-height: 14px; */
+}
+
+/* added to limit the height */
+.nav_item {
+	padding-top: 3px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+
+.nav_item, .vertical_align_middle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.item {
+	margin: 0px 0 0;
+	font-size: 17px;
+/*	font-size: 16px; */
+/* 	letter-spacing: .2em; */
+/* 	font-family: 'GhotamLight'; */
+	font-family: 'Sans Open',Segoe,Frutiger,Proxima-nova,Helvetica;
+	color: #999;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	
+/* 	border-bottom: 1px solid #8b9dc3; */
+	
+}
+
+.item_highlighted {
+	color: #03396c !important; 
+	font-weight: bolder;
+/*	border-bottom: 4px solid #d3d3d3;*/
+/*	transition: border-bottom 300ms;*/
+}

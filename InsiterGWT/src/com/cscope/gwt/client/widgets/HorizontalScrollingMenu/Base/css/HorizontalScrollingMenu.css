@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+/* Make each area overflow horizontally and  have the ability to have other items scrolled into view */
+.scroll {
+	white-space: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Container required styles --------------- /  */
+.container .nav {
+  width: 100%;
+}
+.container .nav_item {
+   color: #f6f7ee;
+}
+
+.container .nav {
+	background: #727c87;
+	white-space: nowrap;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+/* 	border-radius: 0 0 3px 3px; */
+}
+
+
+/* // Nav items */
+.nav_item {
+    padding: 13px 16px 12px;
+}
+
+/* .nav_item:not(:last-child) { */
+/*     border-right: 1px solid rgba(114, 124, 135, 0.2); */
+/* } */
+
+/* // Setup/misc styles --------------- / */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 360px;
+	margin: 5% auto;
+	color: #64cce3;
+/*	line-height: 2; */
+    line-height: 1.5;
+}
+
+/*  Remove the inline-block extra space */
+.nav {
+	font-size: 0;
+}
+
+/*  Requires font size to be reset for these elements */
+.nav_item {
+	font-size: 14px;
+}
+
+.nav_item, .vertical_align_middle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.item {
+	margin: 24px 0 6px;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	color: #999;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.item_highlighted {
+	color: black !important;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

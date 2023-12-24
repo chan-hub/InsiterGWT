@@ -1,0 +1,100 @@
+@CHARSET "UTF-8";
+
+@font-face {
+	font-family: 'GhotamLight';
+	src: url("/fonts/GothamNarrow-Light.otf") format("opentype");
+}
+
+/* Make each area overflow horizontally and  have the ability to have other items scrolled into view */
+.scroll {
+    margin-left: 1%;
+	white-space: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Container required styles --------------- /  */
+.container .nav {
+  width: 98%;
+}
+.container .nav_item {
+   color: #f7f7f7;
+}
+
+.container .nav {
+	background: #788dba;
+/*	background: #8b9dc3; */
+	white-space: nowrap;
+	overflow-x: scroll;
+	-webkit-overflow-scrolling: touch;
+/* 	border-radius: 0 0 3px 3px; */
+}
+
+/* // Nav items */
+.nav_item {
+/*     padding: 20px 16px 14px; */
+	padding-top: 3px;
+    padding-right: 5px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+
+/* .nav_item:not(:last-child) { */
+/*     border-right: 1px solid rgba(114, 124, 135, 0.2); */
+/* } */
+
+/* // Setup/misc styles --------------- / */
+* {
+	box-sizing: border-box;
+}
+
+/*  Remove the inline-block extra space */
+.nav {
+	font-size: 0;
+}
+
+/*  Requires font size to be reset for these elements */
+.nav_item {
+	font-size: 18px;
+	line-height: 30px;
+/*	line-height: 14px; */
+}
+
+.nav_item, .vertical_align_middle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.item {
+	margin: 0px 0 0px;
+/*	font-size: 16px; */
+	font-size: 18px;
+/* 	font-family: 'GhotamLight'; */
+	font-family: 'Sans Open',Segoe,Frutiger,Proxima-nova,Helvetica;
+/* 	letter-spacing: .2em; */
+	color: #999;
+	cursor: pointer;
+	
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	
+/* 	border-bottom: 4px solid transparent; */
+	
+/* 	transition: border-bottom 500ms; */
+}
+
+
+.item_highlighted {
+	color: #ffffff !important;
+	background-color: #2b406e;
+/*	background-color: #3b5998; */
+	font-weight: bold;
+/*	border-bottom: 4px solid #292f33;*/
+/*	transition: border-bottom 300ms;*/
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+
